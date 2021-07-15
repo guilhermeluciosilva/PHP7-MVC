@@ -15,11 +15,11 @@ include './../app/Libraries/Controller.php';
     <link href="<?=URL?>/public/css/estilos.css" rel="stylesheet"> 
 </head>
 <body>
-    <?php    
+    <?php  
+        include '../app/Views/topo.php';  
         $rotas = new Rota();    
+        include '../app/Views/rodape.php';
     ?>
-
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" ></script>
     <script src="<?=URL?>/public/js/jquery.funcoes.js" ></script>
 </body>
