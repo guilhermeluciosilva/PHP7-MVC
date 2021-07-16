@@ -30,7 +30,7 @@ class Database{
     }
 
     public function query($sql){
-        $this->stmt = $this->dnh->prepare($sql);
+        $this->stmt = $this->dbh->prepare($sql);
     }
 
     public function bind($parametro, $valor, $tipo = null){
@@ -72,7 +72,7 @@ class Database{
     }
 
     public function ultimoIdInserido(){
-        return $this->stmt->lastInsertId();
+        return $this->dbh->lastInsertId();
     }
 
 

@@ -4,6 +4,21 @@ include './../app/Libraries/Rota.php';
 include './../app/Libraries/Controller.php';
 include './../app/Libraries/Database.php';
 $db = new Database;
+
+$usuarioId = 10;
+$titulo = 'Titulo';
+$texto = 'texto';
+
+$db->query("INSERT INTO tb_posts (usuario_id, titulo, texto) VALUES (:usuario_id, :titulo, :texto)");
+$db->bind(":usuario_id", $usuarioId);
+$db->bind(":titulo", $titulo);
+$db->bind(":texto", $texto);
+
+$db->executa();
+
+
+echo 'Total de resultados: '.$db->totalResultados();
+echo '<br>Ultimo id: '.$db->ultimoIdInserido();
 ?>
 
 <!DOCTYPE html>
