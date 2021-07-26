@@ -1,6 +1,6 @@
 <?php
 include './../app/configuracao.php';
-// include './../app/autoload.php';
+include './../app/autoload.php';
 
 ?>
 
