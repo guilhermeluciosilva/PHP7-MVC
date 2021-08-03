@@ -12,6 +12,11 @@ class Usuarios extends Controller{
                 'senha' => trim($formulario['senha']),
                 'confirma_senha' => trim($formulario['confirma_senha']),
             ];
+
+            if(empty($formulario['nome'])){
+                $dados['nome_erro'] = 'Preencha o campo nome';
+            }
+
             var_dump($formulario);
         else:
             $dados = [
