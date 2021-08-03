@@ -16,6 +16,10 @@ include './../app/autoload.php';
 </head>
 <body>
     <?php  
+        
+        $date = date_create();
+    echo date_timestamp_get($date);
+        
         include '../app/Views/topo.php';  
         $rotas = new Rota();    
         include '../app/Views/rodape.php';

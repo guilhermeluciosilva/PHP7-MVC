@@ -5,6 +5,7 @@
             <h5 class="text-white h4">Collapsed content</h5>
             <a class="text-white h4" href="<?=URL?>">Home</a>
             <a class="text-white h4" href="<?=URL?>/paginas/sobre">Sobre</a>
+            <a class="text-white h4" href="<?=URL?>/usuarios/cadastrar">Cadastrar</a>
             <span class="text-muted">Toggleable via the navbar brand.</span>
             
         </div>
