@@ -6,19 +6,19 @@
             <form action="<?=URL?>/usuarios/cadastrar" name="cadastrar" method="POST">
                 <div class="mb-3">
                     <label for="nome" class="form-label">Nome: <sup class="text-danger">*</sup></label>
-                    <input type="text" class="form-control" name="nome" id="nome" required>
+                    <input type="text" class="form-control" name="nome" id="nome" value="<?=$dados['nome'];?>" required>
                 </div>
                 <div class="mb-3">
                     <label for="email" class="form-label">E-mail: <sup class="text-danger">*</sup></label>
-                    <input type="email" class="form-control" name="email" id="email" required>
+                    <input type="email" class="form-control" name="email" id="email" value="<?=$dados['email'];?>" required>
                 </div>
                 <div class="mb-3">
                     <label for="senha" class="form-label">Senha: <sup class="text-danger">*</sup></label>
-                    <input type="password" class="form-control" name="senha" id="senha" required>
+                    <input type="password" class="form-control" name="senha" id="senha" value="<?=$dados['senha'];?>" required>
                 </div>
                 <div class="mb-3">
-                    <label for="confirmar_senha" class="form-label">Confirme a Senha: <sup class="text-danger">*</sup></label>
-                    <input type="password" class="form-control" name="confirmar_senha" id="confirmar_senha" required>
+                    <label for="confirma_senha" class="form-label">Confirme a Senha: <sup class="text-danger">*</sup></label>
+                    <input type="password" class="form-control" name="confirma_senha" value="<?=$dados['confirma_senha'];?>" id="confirma_senha" required>
                 </div>
 
                 <div class="row">
