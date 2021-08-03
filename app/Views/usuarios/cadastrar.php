@@ -3,7 +3,7 @@
         <div class="card-body">
             <h2>Cadastre-se</h2>
             <small>Preencha o formulário abaixo para fazer o seu cadastro</small>
-            <form action="" name="cadastrar" method="POST">
+            <form action="<?=URL?>/usuarios/cadastrar" name="cadastrar" method="POST">
                 <div class="mb-3">
                     <label for="nome" class="form-label">Nome: <sup class="text-danger">*</sup></label>
                     <input type="text" class="form-control" name="nome" id="nome" required>
