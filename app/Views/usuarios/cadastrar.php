@@ -6,7 +6,7 @@
             <form action="<?=URL?>/usuarios/cadastrar" name="cadastrar" method="POST">
                 <div class="mb-3">
                     <label for="nome" class="form-label">Nome: <sup class="text-danger">*</sup></label>
-                    <input type="text" name="nome" id="nome" value="<?=$dados['nome'];?>" class="form-control <?=$dados['nome_erro'] ? 'is-invalid' : '';?>">
+                    <input type="text" name="nome" id="nome" value="<?=$dados['nome'];?>" class="form-control <?php if($dados['nome_erro'] == ''){$dados['nome_erro'] = 'is-invalid';} echo $dados['nome_erro'];?>">
                     <div class="invalid-feedback">
                         <?=$dados['nome_erro']?>
                     </div>
